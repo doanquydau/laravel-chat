@@ -18,6 +18,7 @@ require('bootstrap-sass');
  */
 
 window.Vue = require('vue');
+window.Pusher = require('pusher-js');
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -46,3 +47,5 @@ window.Echo = new Echo({
     cluster: Laravel.pusherCluster,
     encrypted: true
 });
+
+console.log(Laravel.pusherCluster)
